@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="questgame.controllers.LoginController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="326.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="imageViewLeft" fitHeight="400.0" fitWidth="374.0" layoutX="-27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/login.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="236.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="usernameTF" focusTraversable="false" layoutX="43.0" layoutY="174.0" promptText="username" />
+            <PasswordField fx:id="passwordTF" focusTraversable="false" layoutX="43.0" layoutY="221.0" promptText="password" />
+            <Button fx:id="loginBtn" layoutX="95.0" layoutY="271.0" mnemonicParsing="false" onAction="#handleLogin" text="Login" />
+            <Text fill="WHITE" layoutX="88.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
